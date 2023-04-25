@@ -43,17 +43,7 @@ docker ps or ls
 to check if they are running 
 
 docker container run -d --name proxy -p 80:80 nginx
-docker container ls
-
-test ports
-curl localhost
-
-curl losthost:8080 
-for apache
-
-clean up:
-docker container stop <all Image IDs>
-
+docke
 docker ls -a 
 to check
 
