@@ -1,0 +1,24 @@
+docker container run -it --name proxy nginx bash # start new container interactively
+# you will be in a prompt
+ls -al looking at all files in the container based on nginx. Type exit to stop.
+
+docker container run -it --name ubuntu ubuntu
+curl google.com 
+then exit
+
+docker container start -ai ubuntu
+curl google.com
+exit
+
+docker container exec -it mysql bash # run additional command in existin container 
+ps aux. # list processes
+
+docker pull alpine
+docker image ls 
+# to see image
+
+# sh shell inside alpine
+docker container run -it alpine sh
+
+docker container inspect --format '{{ .NetworkSettings.IPAddress}}' webhost <name> 
+# to get IPAddress
