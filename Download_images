@@ -1,0 +1,14 @@
+docker image ls
+# check the images you have
+
+docker pull nginx 
+# will download the latest if you don't have it
+
+docker pull nginx:1.11.9
+# to download a specific version
+
+docker pull nginx:1.11.9-alpine
+# download alpine version
+
+docker image ls 
+# to see the size difference 
