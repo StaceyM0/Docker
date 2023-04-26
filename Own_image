@@ -1,0 +1,36 @@
+# go into root of repo
+cd dockerfile-assignment-1
+
+vim dockerfile
+#19 dockerhub node official version 6 on alpin
+Line 19 FROM node:6-alpine
+
+Line 22 Expose 3000
+
+line 24 RUN apk add --update tini
+
+line 26 RUN mkdir -p/usr/src/app
+
+line 28 WORKDIR /usr/src/app
+COPY package.json package.json
+
+LINE 31 RUN npm install && npm cache clean
+
+line 34 COPY ..
+
+line 36 CMD [ "tini", "--", "node", "./bin/www"]
+
+docker build -t testnode .
+# builds directory
+
+docker container run --rm -p 80:3000 testnode
+
+localhost on website
+# to check
+
+docker tag testnode <tag>/testing-node
+docker push <tag>/testing-node
+
+# check on docker hub
+
+docker image rm <tag>/testing-node

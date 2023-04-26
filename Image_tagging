@@ -1,0 +1,12 @@
+# retag existing images
+docker image tag nginx <newtag>/nginx
+
+docker image ls
+
+docker image push<newtag>/nginx
+# need to login
+
+docker login
+docker logout
+# then push image again to show up on dockerhub
+
