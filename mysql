@@ -1,0 +1,25 @@
+docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True mysql
+
+docker volume ls
+
+docker image inspect mysql
+# find mount and volumes 
+
+# run a container from it 
+docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True mysql 
+
+docker volume ls
+docker volume inspect <first few characters from previous command>
+
+ docker container rm mysql
+
+ # to make it easier to keep track of
+
+ docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True -v mysql-dv:/var/lib/mysql mysql
+
+docker volume ls
+
+ docker volume inspect mysql-db 
+ # look for Mountpoint and Name
+
+docker container rm -f mysql
