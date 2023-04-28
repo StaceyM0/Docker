@@ -12,3 +12,7 @@ docker container run --rm --net hey centos curl -s search:9200
 #run 2x
 
 docker container ls
+
+
+
+
