@@ -13,6 +13,3 @@ curl --version
 exit 
 docker ps -a 
 # shouldn't see container 
-
-
-
