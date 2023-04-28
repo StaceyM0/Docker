@@ -23,3 +23,7 @@ docker volume ls
  # look for Mountpoint and Name
 
 docker container rm -f mysql
+
+
+
+
