@@ -22,3 +22,6 @@ docker container run -it alpine sh
 
 docker container inspect --format '{{ .NetworkSettings.IPAddress}}' webhost <name> 
 # to get IPAddress
+
+
+
