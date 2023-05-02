@@ -1,3 +1,4 @@
 docker service scale web=5
 docker service update --image nginx:1.13.6 web
 
+
