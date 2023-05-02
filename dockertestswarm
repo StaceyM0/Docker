@@ -1,0 +1,1 @@
+HEALTHCHECK curl -f http://localhost/ || false
