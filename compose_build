@@ -1,0 +1,8 @@
+docker-compose up -d (command to build & run the file - you’ll notice several files being initialized here. The images will begin downloading and the containers will automatically start)
+docker-compose images (lets you view images built form the docker-compose file)
+docker-compose ps (similar to docker ps, this lists all containers in the docker-compose file)
+docker -compose top (list the processes inside each service)
+docker-compose pause (pauses a service that is running)
+docker-compose unpause (unpauses the service)
+docker-compose stop (use this command only if you want to stop all containers and services)
+docker-compose down (stops and cleans up all images/containers associated with the docker-compose file)
