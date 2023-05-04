@@ -1,3 +1,1 @@
 docker-compose up -d (command to build & run the file - you’ll notice several files being initialized here. The images will begin downloading and the containers will automatically start)
-docker-compose images (lets you view images built form the docker-compose file)
-docker-compose ps (similar to docker ps, this lists all containers in the docker-compose file)
