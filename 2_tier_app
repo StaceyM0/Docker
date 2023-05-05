@@ -49,4 +49,3 @@ docker node ps # states for python and nginx images with the nodes
 docker node ls # nodes within the swarm
 docker stack rm two_tier_app # to remove front/backend and network
 docker swarm leave --force # to ensure leaving swarm
-
