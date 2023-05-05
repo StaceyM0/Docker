@@ -1,0 +1,51 @@
+docker compose
+
+mkdir two_tier_app
+cd two_tier_app
+
+newfile vs code- yaml for language- docker_compose.yaml file name in correct folder
+two_tier_app
+
+add below to file
+
+version: "3.8"
+
+services:
+  frontend:
+    image: nginx
+    ports:
+      - "80:80"
+    depends on:
+      - backend
+    networks:
+      - app-network
+
+  backend:
+    image: python
+    ports:
+      - "80:80"
+    networks:
+      - app-networks
+
+networks:
+     app-network:     
+
+Now time to initialize our swarm for docker
+in terminal: docker swarm init
+docker stack deploy -c docker-compose.yml two_tier_app
+# should create network, frontend, and backend
+# check status
+docker service ls
+# back and frontend been replicated and image for both nginx and python and port 80:80
+run: docker network inspect bridge -f '{{range .IPAM.Config}}{{Gateway}}{{end}}'
+# for host IP
+
+# check logs
+docker service logs tier_two_app_frontend
+
+docker service update tier_two_app_frontend
+
+docker node ps # states for python and nginx images with the nodes
+docker node ls # nodes within the swarm
+docker stack rm two_tier_app # to remove front/backend and network
+docker swarm leave --force # to ensure leaving swarm
