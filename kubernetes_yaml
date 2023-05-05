@@ -1,0 +1,8 @@
+create directory and then cd into it
+create yaml file for config file.yaml
+
+kubectl apply -f <file-name>
+kubectl apply -f <find in teams>
+
+
+
