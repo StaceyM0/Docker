@@ -1,0 +1,3 @@
+kubectl create deployment my-nginx --image nginx
+kubectl get pods
+kubectl get all
