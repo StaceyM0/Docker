@@ -2,3 +2,4 @@ kubectl expose deployment/httpenv --port 8888 --name httpenv-np --type NodePort
 
 kubectl delete service/httpenv service/httpenv-np
 kubectl delete service/httpenv-lb deployment/httpenv
+
