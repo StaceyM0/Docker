@@ -1,0 +1,8 @@
+kubectl create deployment sample --image nginx --dry-run -o yaml
+
+kubectl create deployment test --image nginx --dry-run 
+
+kubectl create job test --image nginx --dry-run -o yaml
+
+kubectl create deployment test --image nginx
+kubectl expose deployment/test --port 80 --dry-run -o yaml
