@@ -1,8 +1,0 @@
-docker --version
-minikube start --nodes=2
-minikube status
-docker ps
-kubectl get nodes
-kubectl get pods -A
-
-
