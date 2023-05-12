@@ -1,0 +1,31 @@
+delete1.yml
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap1
+data:
+  index.html: |
+    <html>
+      <head>
+        <title>Ecommerce clothing and accessories</title>
+      </head>
+      <body>
+        <h1>This is Deployment One</h1>
+      </body>
+    </html>
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap2
+data:
+  index.html: |
+    <html>
+      <head>
+        <title>Ecommerce home decor</title>
+      </head>
+      <body>
+        <h1>This is Deployment Two</h1>
+      </body>
+    </html>
