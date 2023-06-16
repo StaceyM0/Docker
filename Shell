@@ -1,3 +1,6 @@
+
+
+
 docker container run -it --name proxy nginx bash # start new container interactively
 # you will be in a prompt
 ls -al looking at all files in the container based on nginx. Type exit to stop.
