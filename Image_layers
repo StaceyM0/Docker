@@ -1,5 +1,3 @@
-
-
 docker image inspect <name>
 # gives metadata
 
