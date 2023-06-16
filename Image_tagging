@@ -1,5 +1,3 @@
-
-
 # retag existing images
 docker image tag nginx <newtag>/nginx
 
