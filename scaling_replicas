@@ -1,3 +1,6 @@
+
+
+
 kubectl create deployment my-apache --image httpd
 kubectl get all
 kubectl scale deploy/my-apache --replicas 2
