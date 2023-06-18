@@ -1,3 +1,5 @@
+
+
 docker --version
 minikube start --nodes=2
 minikube status
