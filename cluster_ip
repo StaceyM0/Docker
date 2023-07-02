@@ -1,1 +1,4 @@
+
+
+
 kubectl run tmp-shell --rm -it --image smont/netshoot -- bash
