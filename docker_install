@@ -1,6 +1,3 @@
-
-
-
 #Update the System
 sudo yum update -y
 
