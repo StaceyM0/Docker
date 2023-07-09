@@ -1,3 +1,6 @@
+
+
+
 docker network create hey
 docker container run -d --net hey --net-alias search elasticsearch:2
 # run 2x
