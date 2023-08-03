@@ -1,3 +1,6 @@
+
+
+
 kubectl get pods
 kubectl get nodes
 helm install metrics-server stable/metrics-server
