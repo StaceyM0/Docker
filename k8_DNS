@@ -1,5 +1,2 @@
-
-
-
 kubectl get namespaces
 curl <hostname>
