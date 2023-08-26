@@ -1,3 +1,6 @@
+
+
+
 kubectl get pods -w # to watch
 
 kubectl create deployment httpenv --image=smont/httpenv # in seperate terminal
