@@ -1,6 +1,3 @@
-
-
-
 docker image build -t <directory>
 # creates a build hash
 
